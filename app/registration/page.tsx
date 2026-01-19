@@ -142,7 +142,7 @@ export default function RegistrationPage() {
                 <div className="relative w-full" style={{ paddingTop: "140%" }}>
                   <iframe
                     title="ROHP Program Registration"
-                    src="https://docs.google.com/forms/d/e/P87uSPvaxMd47gKQ9/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdbcaUiNuOrBeCSoizLHexhzcwT9joUDUBW_k58jDPy73IFgQ/viewform?embedded=true"
                     className="absolute inset-0 h-full w-full"
                     frameBorder={0}
                     marginHeight={0}
@@ -174,7 +174,7 @@ export default function RegistrationPage() {
                 <div className="relative w-full" style={{ paddingTop: "120%" }}>
                   <iframe
                     title="ROHP Q&A"
-                    src="https://docs.google.com/forms/d/e/deLHGzSHbgYsykg47/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfPBSmuKgV1NGvM-pQNxDvkiAP_OlDCGVGxMn1WqLbKj01AvA/viewform?embedded=true"
                     className="absolute inset-0 h-full w-full"
                     frameBorder={0}
                     marginHeight={0}
