@@ -1,7 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { RegistrationForm } from "@/components/registration-form"
-import { QnAForm } from "@/components/qna-form"
 import { Download, FileCheck, MessageSquare } from "lucide-react"
 import { SplitText } from "@/components/split-text"
 import { FadeIn } from "@/components/fade-in"
@@ -140,7 +138,20 @@ export default function RegistrationPage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <RegistrationForm />
+              <div className="rounded-xl border bg-background overflow-hidden">
+                <div className="relative w-full" style={{ paddingTop: "140%" }}>
+                  <iframe
+                    title="ROHP Program Registration"
+                    src="https://docs.google.com/forms/d/e/P87uSPvaxMd47gKQ9/viewform?embedded=true"
+                    className="absolute inset-0 h-full w-full"
+                    frameBorder={0}
+                    marginHeight={0}
+                    marginWidth={0}
+                  >
+                    Loading…
+                  </iframe>
+                </div>
+              </div>
             </FadeIn>
           </div>
         </div>
@@ -151,7 +162,28 @@ export default function RegistrationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
             <FadeIn>
-              <QnAForm />
+              <div className="mb-10 text-center">
+                <h2 className="mb-4 text-3xl font-bold" style={{ color: "#003262" }}>
+                  Q&amp;A Form (Optional)
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Submit questions you’d like addressed during the program.
+                </p>
+              </div>
+              <div className="rounded-xl border bg-background overflow-hidden">
+                <div className="relative w-full" style={{ paddingTop: "120%" }}>
+                  <iframe
+                    title="ROHP Q&A"
+                    src="https://docs.google.com/forms/d/e/deLHGzSHbgYsykg47/viewform?embedded=true"
+                    className="absolute inset-0 h-full w-full"
+                    frameBorder={0}
+                    marginHeight={0}
+                    marginWidth={0}
+                  >
+                    Loading…
+                  </iframe>
+                </div>
+              </div>
             </FadeIn>
           </div>
         </div>
