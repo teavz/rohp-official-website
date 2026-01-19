@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { RegistrationTrigger } from "@/components/registration-trigger"
 import { Download, FileCheck, MessageSquare } from "lucide-react"
 import { SplitText } from "@/components/split-text"
 import { FadeIn } from "@/components/fade-in"
@@ -26,22 +27,18 @@ export default function RegistrationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-5xl">
             <FadeIn>
-              <h2 className="mb-10 text-3xl font-bold text-center" style={{ color: "#003262" }}>
-                Registration Steps
-              </h2>
+              <h2 className="mb-10 text-3xl font-bold text-center text-berkeley">Registration Steps</h2>
             </FadeIn>
             <div className="grid gap-8 md:grid-cols-3">
               <FadeIn delay={0.1}>
                 <Card className="border-2 text-center">
                   <CardContent className="pt-8">
                     <div className="mb-4 flex justify-center">
-                      <div className="rounded-full p-4" style={{ backgroundColor: "#FDB515" }}>
-                        <Download className="h-8 w-8" style={{ color: "#003262" }} />
+                      <div className="rounded-full p-4 california-gold">
+                        <Download className="h-8 w-8 icon-berkeley" />
                       </div>
                     </div>
-                    <h3 className="mb-3 text-xl font-bold" style={{ color: "#003262" }}>
-                      Step 1
-                    </h3>
+                    <h3 className="mb-3 text-xl font-bold text-berkeley">Step 1</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Download and sign the appropriate waiver (Virtual or In-Person)
                     </p>
@@ -53,13 +50,11 @@ export default function RegistrationPage() {
                 <Card className="border-2 text-center">
                   <CardContent className="pt-8">
                     <div className="mb-4 flex justify-center">
-                      <div className="rounded-full p-4" style={{ backgroundColor: "#FDB515" }}>
-                        <FileCheck className="h-8 w-8" style={{ color: "#003262" }} />
+                      <div className="rounded-full p-4 california-gold">
+                        <FileCheck className="h-8 w-8 icon-berkeley" />
                       </div>
                     </div>
-                    <h3 className="mb-3 text-xl font-bold" style={{ color: "#003262" }}>
-                      Step 2
-                    </h3>
+                    <h3 className="mb-3 text-xl font-bold text-berkeley">Step 2</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Complete the registration form below and upload your signed waiver
                     </p>
@@ -71,13 +66,11 @@ export default function RegistrationPage() {
                 <Card className="border-2 text-center">
                   <CardContent className="pt-8">
                     <div className="mb-4 flex justify-center">
-                      <div className="rounded-full p-4" style={{ backgroundColor: "#FDB515" }}>
-                        <MessageSquare className="h-8 w-8" style={{ color: "#003262" }} />
+                      <div className="rounded-full p-4 california-gold">
+                        <MessageSquare className="h-8 w-8 icon-berkeley" />
                       </div>
                     </div>
-                    <h3 className="mb-3 text-xl font-bold" style={{ color: "#003262" }}>
-                      Step 3
-                    </h3>
+                    <h3 className="mb-3 text-xl font-bold text-berkeley">Step 3</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Optionally submit questions for the Q&A session
                     </p>
@@ -94,9 +87,7 @@ export default function RegistrationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
             <FadeIn>
-              <h2 className="mb-6 text-2xl font-bold text-center" style={{ color: "#003262" }}>
-                Download Waivers
-              </h2>
+              <h2 className="mb-6 text-2xl font-bold text-center text-berkeley">Download Waivers</h2>
               <p className="mb-8 text-center text-muted-foreground leading-relaxed">
                 Download, fill out, and sign the appropriate waiver. You'll upload it in the registration form below.
               </p>
@@ -129,29 +120,14 @@ export default function RegistrationPage() {
           <div className="mx-auto max-w-4xl">
             <FadeIn>
               <div className="mb-10 text-center">
-                <h2 className="mb-4 text-3xl font-bold" style={{ color: "#003262" }}>
-                  Registration Form
-                </h2>
+                <h2 className="mb-4 text-3xl font-bold text-berkeley">Registration Form</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Please fill out all required fields marked with <span className="text-red-500">*</span>
+                  Click below to start your ROHP registration. The form will appear after a short animation.
                 </p>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="rounded-xl border bg-background overflow-hidden">
-                <div className="relative w-full" style={{ paddingTop: "140%" }}>
-                  <iframe
-                    title="ROHP Program Registration"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdbcaUiNuOrBeCSoizLHexhzcwT9joUDUBW_k58jDPy73IFgQ/viewform?embedded=true"
-                    className="absolute inset-0 h-full w-full"
-                    frameBorder={0}
-                    marginHeight={0}
-                    marginWidth={0}
-                  >
-                    Loading…
-                  </iframe>
-                </div>
-              </div>
+              <RegistrationTrigger />
             </FadeIn>
           </div>
         </div>
@@ -163,9 +139,7 @@ export default function RegistrationPage() {
           <div className="mx-auto max-w-3xl">
             <FadeIn>
               <div className="mb-10 text-center">
-                <h2 className="mb-4 text-3xl font-bold" style={{ color: "#003262" }}>
-                  Q&amp;A Form (Optional)
-                </h2>
+                <h2 className="mb-4 text-3xl font-bold text-berkeley">Q&amp;A Form (Optional)</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Submit questions you’d like addressed during the program.
                 </p>
@@ -194,9 +168,7 @@ export default function RegistrationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
             <FadeIn>
-              <h2 className="mb-6 text-2xl font-bold text-center" style={{ color: "#003262" }}>
-                Important Information
-              </h2>
+              <h2 className="mb-6 text-2xl font-bold text-center text-berkeley">Important Information</h2>
             </FadeIn>
             <FadeIn delay={0.2}>
               <Card>
