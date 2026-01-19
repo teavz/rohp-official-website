@@ -4,6 +4,7 @@ import { Acme } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { AnimatedThemeToggle } from "@/components/ui/animated-theme-toggle"
 import "./globals.css"
 
 const _acme = Acme({
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <AnimatedThemeToggle />
         <Analytics />
       </body>
     </html>
