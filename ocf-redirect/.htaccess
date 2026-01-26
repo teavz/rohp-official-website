@@ -1,0 +1,26 @@
+# OCF to Vercel Proxy/Display
+# Place this file in your OCF public_html directory
+# This keeps the OCF URL while displaying Vercel content
+
+# Option 1: Iframe Method (using index.html)
+# No Apache configuration needed - just use index.html with iframe
+
+# Option 2: Apache Reverse Proxy (if mod_proxy is enabled on OCF)
+# Uncomment the lines below if OCF allows ProxyPass
+# Note: OCF may not allow this for security reasons
+
+# <IfModule mod_proxy.c>
+#     ProxyPreserveHost On
+#     ProxyPass / https://YOUR_VERCEL_URL/
+#     ProxyPassReverse / https://YOUR_VERCEL_URL/
+# </IfModule>
+
+# Option 3: If you want to proxy specific paths only
+# <IfModule mod_proxy.c>
+#     ProxyPass / https://YOUR_VERCEL_URL/
+#     ProxyPassReverse / https://YOUR_VERCEL_URL/
+#     # Exclude certain files from proxy
+#     ProxyPass /ocf-redirect ! 
+# </IfModule>
+
+# For most cases, use the iframe method in index.html (no .htaccess needed)

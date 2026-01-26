@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHP - Regents' Overnight Host Program | UC Berkeley</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #vercel-frame {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #003262 0%, #FDB515 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            z-index: 9999;
+        }
+
+        .loading.hidden {
+            display: none;
+        }
+
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div style="text-align: center;">
+            <h1 style="margin-bottom: 1rem;">ROHP</h1>
+            <div class="spinner"></div>
+            <p style="margin-top: 1rem;">Loading...</p>
+        </div>
+    </div>
+    <iframe id="vercel-frame" src="https://YOUR_VERCEL_URL" title="ROHP Website" allow="fullscreen" loading="eager"
+        onload="document.getElementById('loading').classList.add('hidden')"></iframe>
+    <script>
+        // Hide loading screen once iframe loads
+        document.getElementById('vercel-frame').addEventListener('load', function () {
+            document.getElementById('loading').classList.add('hidden');
+        });
+
+        // Handle iframe load errors (e.g., X-Frame-Options blocking)
+        document.getElementById('vercel-frame').addEventListener('error', function () {
+            document.getElementById('loading').innerHTML =
+                '<div style="text-align: center; padding: 2rem;">' +
+                '<h1>Unable to load content</h1>' +
+                '<p>Please visit the site directly:</p>' +
+                '<a href="https://YOUR_VERCEL_URL" style="color: white; text-decoration: underline;">Open Website</a>' +
+                '</div>';
+        });
+    </script>
+</body>
+
+</html>
