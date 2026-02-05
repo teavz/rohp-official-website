@@ -45,7 +45,7 @@ export default function VirtualAgendaPage() {
                 <Clock className="h-6 w-6" style={{ color: "#003262" }} />
                 <div>
                   <div className="font-bold" style={{ color: "#003262" }}>
-                    March 15th, 2025
+                    March 14th, 2025
                   </div>
                   <div className="text-sm text-muted-foreground">9:00 AM - 12:30 PM PST</div>
                 </div>

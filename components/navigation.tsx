@@ -23,6 +23,11 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
+            <img 
+              src="/rohp-logo.png" 
+              alt="ROHP Logo" 
+              className="h-8 w-8 object-contain"
+            />
             <div className="text-xl font-bold text-berkeley">ROHP</div>
           </Link>
 

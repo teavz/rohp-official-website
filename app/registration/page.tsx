@@ -114,20 +114,38 @@ export default function RegistrationPage() {
         </div>
       </section>
 
-      {/* Registration Form */}
+      {/* Registration Forms */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <FadeIn>
               <div className="mb-10 text-center">
-                <h2 className="mb-4 text-3xl font-bold text-berkeley">Registration Form</h2>
+                <h2 className="mb-4 text-3xl font-bold text-berkeley">Registration Forms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Click below to start your ROHP registration. The form will appear after a short animation.
+                  Choose your specific ROHP program below. Each button will open the matching registration form
+                  after a short animation.
                 </p>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <RegistrationTrigger />
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <RegistrationTrigger
+                  label="March 8–9 Overnight"
+                  formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
+                />
+                <RegistrationTrigger
+                  label="March 15 Virtual-Program"
+                  formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
+                />
+                <RegistrationTrigger
+                  label="March 15–16 Overnight"
+                  formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
+                />
+                <RegistrationTrigger
+                  label="April 18–19 Scholars Only"
+                  formUrl="https://docs.google.com/forms/d/1MLMepiljcRQ58-8azl63caZUhz4x8USfyBtJtfJeRbU/edit"
+                />
+              </div>
             </FadeIn>
           </div>
         </div>

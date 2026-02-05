@@ -7,29 +7,31 @@ import { FadeIn } from "@/components/fade-in"
 
 export default function OvernightAgendaPage() {
   const day1Events = [
-    { time: "5:00 PM", title: "Check-ins", description: "Arrival and welcome" },
-    { time: "5:30 PM", title: "Official Opening", description: "Program kickoff" },
-    { time: "5:50 PM", title: "Icebreakers", description: "Meet fellow participants" },
-    { time: "6:05 PM", title: "DEI Agreements", description: "Community guidelines" },
-    { time: "6:20 PM", title: "Kahoot", description: "Interactive trivia game" },
-    { time: "6:40 PM", title: "Faculty Speaker", description: "Presentation from a professor" },
-    { time: "7:00 PM", title: "Dinner", description: "Meal together" },
-    { time: "7:15 PM", title: "Performance Group", description: "Student performance showcase" },
-    { time: "7:50 PM", title: "Benefits Overview", description: "Scholarship benefits" },
-    { time: "7:55 PM", title: "Scholar Panel", description: "Q&A with current scholars" },
-    { time: "8:35 PM", title: "Campus Tour", description: "Evening campus walk" },
-    { time: "10:10 PM", title: "Meet Your Host", description: "Connect with your overnight host" },
-    { time: "10:30 PM", title: "Nighttime Activities", description: "Optional social activities" },
-    { time: "12:00 AM", title: "End of Night", description: "Lights out" },
+    { time: "5:00 PM", title: "Check-in & Welcome", description: "Arrival and registration" },
+    { time: "5:30 PM", title: "Official Opening", description: "Program introduction and welcome remarks" },
+    { time: "5:50 PM", title: "Icebreakers", description: "Get to know your fellow participants" },
+    { time: "6:05 PM", title: "DEI Community Agreements", description: "Setting community guidelines" },
+    { time: "6:20 PM", title: "Interactive Quiz", description: "Kahoot trivia game" },
+    { time: "6:40 PM", title: "Faculty Speaker", description: "Presentation and Q&A with a Berkeley professor" },
+    { time: "7:00 PM", title: "Dinner", description: "Meal served together" },
+    { time: "7:15 PM", title: "Student Performances", description: "Showcase of student talent" },
+    { time: "7:50 PM", title: "Benefits Overview", description: "Learn about Regents' Scholarship benefits" },
+    { time: "7:55 PM", title: "Scholar Panel & Q&A", description: "Q&A session with current Regents' Scholars" },
+    { time: "8:35 PM", title: "Campus Tours", description: "Evening walk through Berkeley's campus" },
+    { time: "10:10 PM", title: "Meet Your Host", description: "Connect with your overnight host and get settled" },
+    { time: "10:30 PM", title: "Nighttime Activities", description: "Optional social activities and games" },
+    { time: "12:00 AM", title: "End of Night", description: "Return to dorms with hosts" },
   ]
 
   const day2Events = [
-    { time: "9:40 AM", title: "Morning Open", description: "Wake up and prepare" },
-    { time: "9:45 AM", title: "Breakfast", description: "Morning meal together" },
-    { time: "10:15 AM", title: "Focus Tours", description: "Specialized facility tours (Parents welcome)" },
-    { time: "11:30 AM", title: "Photos at Campanile", description: "Group photos at iconic bell tower" },
-    { time: "12:00 PM", title: "Formal Closing", description: "Program wrap-up" },
-    { time: "12:30 PM", title: "Program Ends", description: "Farewell" },
+    { time: "8:30 AM", title: "Breakfast", description: "Morning meal together" },
+    { time: "9:00 AM", title: "Morning Gathering", description: "Good morning and schedule overview" },
+    { time: "9:15 AM", title: "Breakfast & Fun Activity", description: "Continue breakfast with interactive activity" },
+    { time: "9:45 AM", title: "Focus Tour Groups", description: "Specialized facility tours (Parents welcome at 10:00 AM)" },
+    { time: "11:00 AM", title: "Regroup at Campanile", description: "Meet at the iconic bell tower" },
+    { time: "11:00 AM", title: "Photo Booth & Free Time", description: "Group photos and time to talk with parents" },
+    { time: "11:30 AM", title: "Scholar Panel #2", description: "Second Q&A session with current scholars" },
+    { time: "12:00 PM", title: "Closing & Group Photo", description: "Final remarks and group photo" },
   ]
 
   return (
@@ -59,19 +61,15 @@ export default function OvernightAgendaPage() {
                 </h3>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                   <Button variant="outline" className="h-auto py-3 flex flex-col gap-1 bg-transparent">
-                    <span className="font-bold">Feb 22-23</span>
+                    <span className="font-bold">Mar 7-8</span>
                     <span className="text-xs text-muted-foreground">Download PDF</span>
                   </Button>
                   <Button variant="outline" className="h-auto py-3 flex flex-col gap-1 bg-transparent">
-                    <span className="font-bold">Mar 8-9</span>
+                    <span className="font-bold">Mar 14-15</span>
                     <span className="text-xs text-muted-foreground">Download PDF</span>
                   </Button>
                   <Button variant="outline" className="h-auto py-3 flex flex-col gap-1 bg-transparent">
-                    <span className="font-bold">Mar 15-16</span>
-                    <span className="text-xs text-muted-foreground">Download PDF</span>
-                  </Button>
-                  <Button variant="outline" className="h-auto py-3 flex flex-col gap-1 bg-transparent">
-                    <span className="font-bold">Apr 18-19</span>
+                    <span className="font-bold">Apr 17-18</span>
                     <span className="text-xs text-muted-foreground">Scholars Only</span>
                   </Button>
                 </div>

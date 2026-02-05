@@ -18,24 +18,15 @@ export const metadata: Metadata = {
   title: "ROHP - Regents' Overnight Host Program | UC Berkeley",
   description:
     "Experience UC Berkeley through the Regents' Overnight Host Program. Connect with current students and discover life as a Golden Bear.",
-  generator: "v0.app",
   keywords: ["UC Berkeley", "Regents Scholarship", "ROHP", "College Visit", "Campus Tour"],
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/rohp-logo.png",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/rohp-logo.png",
   },
 }
 

@@ -156,11 +156,11 @@ export function RegistrationForm() {
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <option value="">Select date...</option>
-                <option value="feb22">Feb. 22-23 (Overnight)</option>
-                <option value="mar8">Mar. 8-9 (Overnight)</option>
-                <option value="mar15virtual">Mar. 15 (Virtual)</option>
-                <option value="mar15">Mar. 15-16 (Overnight)</option>
-                <option value="apr18">Apr. 18-19 (Overnight - Scholars Only)</option>
+                <option value="feb21">Feb. 21-22 (Overnight)</option>
+                <option value="mar7">Mar. 7-8 (Overnight)</option>
+                <option value="mar14virtual">Mar. 14 (Virtual)</option>
+                <option value="mar14">Mar. 14-15 (Overnight)</option>
+                <option value="apr17">Apr. 17-18 (Overnight - Scholars Only)</option>
               </select>
             </div>
 

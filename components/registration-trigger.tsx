@@ -5,9 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 import { DotFlow, type DotFlowProps } from "@/components/ui/dot-flow";
 
-const formUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdbcaUiNuOrBeCSoizLHexhzcwT9joUDUBW_k58jDPy73IFgQ/viewform";
-
 // Frames copied from the sample for a 7x7 dot grid
 const importing = [
   [0, 2, 4, 6, 20, 34, 48, 46, 44, 42, 28, 14, 8, 22, 36, 38, 40, 26, 12, 10, 16, 30, 24, 18, 32],
@@ -95,34 +92,40 @@ const items: DotFlowProps["items"] = [
   {
     title: "Ready to go?",
     frames: importing,
-    duration: 200,
+    duration: 100,
   },
   {
     title: "Preparing your form...",
     frames: syncing,
     repeatCount: 2,
-    duration: 100,
+    duration: 50,
   },
   {
     title: "Verifying",
     frames: searching,
     repeatCount: 2,
-    duration: 150,
+    duration: 75,
   },
   {
     title: "Hope you enjoy...",
     frames: shadcn,
     repeatCount: 2,
-    duration: 200,
+    duration: 100,
   },
   {
     title: "Have fun!",
     frames: heartbit,
     repeatCount: 2,
+    duration: 75,
   },
 ];
 
-export function RegistrationTrigger() {
+type RegistrationTriggerProps = {
+  label: string;
+  formUrl: string;
+};
+
+export function RegistrationTrigger({ label, formUrl }: RegistrationTriggerProps) {
   const [animating, setAnimating] = useState(false);
   const openedRef = useRef(false);
 
@@ -159,7 +162,7 @@ export function RegistrationTrigger() {
             onClick={handleClick}
             className="berkeley-blue hover:opacity-90 transition-all px-10 text-lg font-semibold py-4 rounded-full shadow-lg"
           >
-            Sign Up Here
+            {label}
           </button>
         </MagneticButton>
       )}
