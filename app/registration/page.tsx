@@ -128,22 +128,22 @@ export default function RegistrationPage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-15 md:gap-60 md:grid-cols-2 lg:grid-cols-4">
                 <RegistrationTrigger
                   label="March 8–9 Overnight"
                   formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
                 />
                 <RegistrationTrigger
-                  label="March 15 Virtual-Program"
-                  formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
+                  label="March 15 Virtual"
+                  formUrl="https://docs.google.com/forms/d/e/1FAIpQLScinZCqcFKYGjAOqc77UWGLS1BhxGtES3fBbrW30SCqCqiYcQ/viewform?usp=dialog"
                 />
                 <RegistrationTrigger
                   label="March 15–16 Overnight"
-                  formUrl="https://docs.google.com/forms/u/1/d/1zEjurC6QDqixq1P9_xRfYvtLhfR5DiEUtBB44KMbmYY/edit?usp=drive_web&ouid=100170651047177504502"
+                  formUrl="https://docs.google.com/forms/d/e/1FAIpQLSc-WPpOxlD3phDenG-U_OKdwFnG6NrQPOVF999NLezK7u5MEA/viewform?usp=publish-editor"
                 />
                 <RegistrationTrigger
                   label="April 18–19 Scholars Only"
-                  formUrl="https://docs.google.com/forms/d/1MLMepiljcRQ58-8azl63caZUhz4x8USfyBtJtfJeRbU/edit"
+                  formUrl="https://docs.google.com/forms/d/e/1FAIpQLSfkHsRkrbMmHjJyniK-C5IHB0kxUxBjmI3fkTXVMef_pYzknw/viewform?usp=dialog"
                 />
               </div>
             </FadeIn>

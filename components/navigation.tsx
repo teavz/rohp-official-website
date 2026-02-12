@@ -11,7 +11,6 @@ export function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/agenda", label: "Agenda" },
-    { href: "/registration", label: "Register" },
     { href: "/faq", label: "FAQ" },
     { href: "/housing", label: "Housing Tours" },
     { href: "/committee", label: "Committee" },
