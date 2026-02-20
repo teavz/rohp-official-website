@@ -12,10 +12,7 @@ type RegistrationTriggerProps = {
 export function RegistrationTrigger({ label, formUrl }: RegistrationTriggerProps) {
   const handleClick = () => {
     if (typeof window === "undefined") return;
-    const win = window.open(formUrl, "_blank", "noopener,noreferrer");
-    if (!win) {
-      window.location.href = formUrl;
-    }
+    window.location.href = formUrl;
   };
 
   return (
